@@ -1,0 +1,29 @@
+package:
+  name: geoext
+  version: "0.0.5"
+
+source:
+  path: ../base-geoext
+
+requirements:
+  build:
+    - python
+    - setuptools
+
+  run:
+    - python
+    - numpy
+    - gdal
+    - rasterio
+    - rioxarray
+    - geopandas
+    - pandas
+    - affine
+    - h5py
+
+test:
+  imports:
+    - geoext
+
+about:
+  home:
